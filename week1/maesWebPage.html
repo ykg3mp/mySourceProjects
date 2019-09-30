@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <style> /*comment*/
+        h1{
+            color: red;
+        } 
+        h2{
+            background-color: antiquewhite;
+        }
+        h2:hover{
+            background-color: blue
+        }
+        .Box{
+            background-color: violet;
+            color: white;
+            padding: 3vw;
+            text-align: center;
+            font-family: arial;
+            margin: 10vw;
+            border-style: solid; 
+            border-color: black; 
+            border-width: 1vh; 
+        }
+    </style> 
+
+    </head>
+
+    <body>
+        <h1>Mae's web page</h1>
+        <p id="demo">A Paragraph on how great bones are</p>
+        <button type="button" onclick="myFunction()">buy me bones from cville farm market</button> 
+                
+        <h1> <!----> 
+            Hey don't forget to buy a bone for me. 
+        </h1>
+        <h2>
+            Hey really don't forget to buy it. 
+        </h2>
+        <div class="Box"> This is my happy place. It's pink with a black border </div>
+
+        <div id='testBox'>box</div>
+        <script type = "text/javascript">
+            function testFunc(){
+                //alert("hello, world!");
+                //let i = prompt("tell me your name");
+                //alert(i);
+                document.getElementById('testBox').innerHTML = "hey" 
+            }
+            function checkAns1(){
+                if(document.getElementById("ans1").value == "New York City"){
+                    alert('you are correct')
+                }
+                else{
+                    alert("you are wrong")
+                }
+            }
+            function update(){
+                document.getElementById("scoreboard").innerHTML = score;
+            }
+
+
+        </script>
+        <div id='testBox' onclick = {testFunc()}> box </div>
+
+        <div>
+            <p><strong>Question 1</strong></p>
+            <p>"What is the largest bone in the United States?</p> 
+            <form> 
+                <textarea id="ans1"></textarea> 
+                <button onclick = {checkAns1()}>submit answer</button>
+            </form>
+        </div>
+        <div id="scoreboard"> </div>
+
+    </body>
+</html>

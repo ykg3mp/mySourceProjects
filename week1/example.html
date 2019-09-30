@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>
+            <script type="text/javascript">
+              
+                function testFunc(){
+                    document.getElementById("testBox").innerHTML = "hey";
+                }
+                function checkAns1(){
+                    if(document.getElementById("ans1").value == "New York City"){
+                        alert('you are correct');
+               
+                    }
+                    else {
+                        alert("you are wrong");
+                        updateScore();
+                    }
+                }
+           
+            </script>
+        <div id="testBox" onclick={testFunc()}> box </div>
+        <div>
+            <p><strong>Question 1</strong></p>
+            <p>What is the largest city in the United States?</p>
+            <form>
+                <textarea id="ans1"></textarea>
+                <button onclick={checkAns1()}>submit answer</button>
+            </form>
+        </div>
+       
+    </body>
+</html>
