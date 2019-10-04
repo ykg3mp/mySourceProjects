@@ -7,3 +7,4 @@ Octopus Quiz using HTML+CSS+Javascript
 Squirrel Viewer using React 
 
 ## Week 3: 
+Squirrel Viewer using React and Material-UI
